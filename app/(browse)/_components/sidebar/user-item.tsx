@@ -38,7 +38,7 @@ export const UserItem = ({ username, imageUrl, isLive }: UserItemProps) => {
             collapsed && "justify-center"
           )}
         >
-          <UserAvatar imageUrl={imageUrl} username={username} isLive={false} />
+          <UserAvatar imageUrl={imageUrl} username={username} isLive={isLive} />
           {!collapsed ? <p className="truncate">{username}</p> : null}
 
           {!collapsed && isLive ? <LiveBadge className="ml-auto" /> : null}
