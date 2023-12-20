@@ -36,7 +36,6 @@ export const ConnectModal = () => {
   const [isPending, startTransition] = useTransition();
 
   const onSubmit = () => {
-    console.log("submitting...");
     startTransition(() => {
       createIngress(parseInt(ingressType))
         .then(() => {

@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 export const Search = () => {
-  console.log("Logged here");
   const router = useRouter();
   const [value, setValue] = useState("");
 
