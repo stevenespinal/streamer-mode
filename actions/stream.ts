@@ -24,6 +24,7 @@ export const updateStream = async (values: Partial<Stream>) => {
       isChatEnabled: values.isChatEnabled,
       isChatFollowersOnly: values.isChatFollowersOnly,
       isChatDelayed: values.isChatDelayed,
+      thumbnailUrl: values.thumbnailUrl,
     };
 
     const stream = await db.stream.update({
