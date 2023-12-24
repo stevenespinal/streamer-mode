@@ -25,7 +25,7 @@ export const InfoCard = ({
   return (
     <div className="px-4">
       <div className="rounded-xl bg-background">
-        <div className="flex items-center gap-x-2.5 p-4">
+        <div className="flex items-center gap-x-2.5 p-4 lg:px-10 lg:py-6">
           <div className="rounded-md bg-blue-600 p-2 h-auto w-auto">
             <Pencil className="h-5 w-5" />
           </div>
@@ -40,7 +40,7 @@ export const InfoCard = ({
           <InfoModal initialName={name} initialThumbnailUrl={thumbnailUrl} />
         </div>
         <Separator />
-        <div className="p-4 lg:p-6 space-y-4">
+        <div className="p-4 lg:px-10 lg:py-6 space-y-4">
           <div>
             <h3 className="text-sm text-muted-foreground mb-2">Name</h3>
             <p className="text-sm text-semibold">{name}</p>
