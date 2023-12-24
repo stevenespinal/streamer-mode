@@ -26,6 +26,7 @@ export const Following = ({ data }: FollowingProps) => {
         {data.map((follow) => {
           return (
             <UserItem
+              key={follow.id}
               username={follow.following.username}
               imageUrl={follow.following.imageUrl}
               isLive={follow.following.stream?.isLive}
