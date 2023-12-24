@@ -1,5 +1,5 @@
 import { getRecommended } from "@/lib/recommended-service";
-import { Recommended, RecommendedSkeleton } from "./recommended";
+import { Recommended, RecommendedSkeleton } from "./recommended-streams";
 import { Toggle, ToggleSkeleton } from "./toggle";
 import { Wrapper } from "./wrapper";
 import { getFollowedUsers } from "@/lib/follow-service";
