@@ -29,7 +29,6 @@ export const Header = ({
 }: HeaderProps) => {
   const participants = useParticipants();
   const participant = useRemoteParticipant(hostIdentity);
-  console.log("🚀 ~ file: header.tsx:32 ~ participant:", participant);
 
   const isLive = !!participant;
   const participantCount = participants.length - 1;

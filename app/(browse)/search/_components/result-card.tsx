@@ -9,7 +9,14 @@ import { formatDistanceToNow } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 
 interface ResultCardProps {
-  data: Stream & { user: User };
+  data: {
+    user: User;
+    id: string;
+    name: string;
+    isLive: boolean;
+    thumbnailUrl: string | null;
+    updatedAt: Date;
+  };
 }
 export const ResultCard = ({ data }: ResultCardProps) => {
   return (
